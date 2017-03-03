@@ -20,14 +20,14 @@ This will start the GoCD agent and connect it the GoCD server specified by `GO_S
 
 ```
 docker run -d \
-        -e AGENT_AUTOREGISTER_KEY=... \
-        -e AGENT_AUTOREGISTER_RESOURCES=... \
-        -e AGENT_AUTOREGISTER_ENVIRONMENTS=... \
-        -e AGENT_AUTOREGISTER_HOSTNAME=... \
+        -e AGENT_AUTO_REGISTER_KEY=... \
+        -e AGENT_AUTO_REGISTER_RESOURCES=... \
+        -e AGENT_AUTO_REGISTER_ENVIRONMENTS=... \
+        -e AGENT_AUTO_REGISTER_HOSTNAME=... \
         gocd/gocd-agent-centos-7
 ```
 
-If the `AGENT_AUTOREGISTER_*` variables are provided (we recommend that you do), then the agent will be automatically approved by the server. See the [auto registration docs](https://docs.gocd.io/current/advanced_usage/agent_auto_register.html) on the GoCD website.
+If the `AGENT_AUTO_REGISTER_*` variables are provided (we recommend that you do), then the agent will be automatically approved by the server. See the [auto registration docs](https://docs.gocd.io/current/advanced_usage/agent_auto_register.html) on the GoCD website.
 
 ## Mounting volumes
 
